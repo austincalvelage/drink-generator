@@ -2,9 +2,10 @@ import React from "react";
 import LiquorSelector from "./LiquorSelector"
 
 class Header extends React.Component {
+  // CallBack Function to grab the Liqour type from the LiquiorSelector
   getLiquorType = (dataFromChild) => {
    const liquor  = dataFromChild;
-   return liquor;
+   this.props.callbackFromParent(liquor);
   }
     render() {
       return (

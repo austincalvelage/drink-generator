@@ -5,7 +5,7 @@ const DrinkCard = (props) => {
     <img src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg" alt={props.drinkName} className="w-1/2 rounded-full mb-6"/>
     <h3 className="">Ingredients</h3>
     <ul className="mb-6">
-      <li>test</li>
+      <li>{props.liquor}</li>
       <li>test</li>
       <li>test</li>
     </ul>
